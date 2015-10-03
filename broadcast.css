@@ -5,8 +5,7 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
-@media (min-width: 768px)
 .navbar-nav {
-    float: right;
-    margin: 0;
+  float: right;
+  margin: 0;
 }
