@@ -1,0 +1,11 @@
+body {
+  padding-top: 50px;
+}
+.broadcast {
+  padding: 40px 15px;
+  text-align: center;
+}
+.navbar-nav {
+  float: right;
+  margin: 0;
+}
