@@ -190,7 +190,8 @@ body {
     height: 40px;
     line-height: 0;
     margin: 10px 0;
-    width: 135px;
+    width: 115px;
+    background-size: 115px 40px;
 }
 .playstore-cta {
     background-image: url("../images/playstore.png");
