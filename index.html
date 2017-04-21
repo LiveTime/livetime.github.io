@@ -26,6 +26,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/videopopup.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/videopopup.css" media="screen" />
+
   </head>
 
   <body>
@@ -53,8 +57,27 @@
             <h1 class="cover-heading" style="font-family:cursive;font-size:72px;">fluent</h1>
             <p class="lead">Real-time translation of your voice</p>
             <p class="lead">
-              <a href="demo.html" class="btn btn-lg btn-default" style="width:150px">Watch Demo</a>
-            </p>
+              <a href="javascript:void(0)" id="video1" class="btn btn-lg btn-default" style="width:150px">Watch Demo</a>
+              <br/>
+              <div id="vidBox">
+              <div id="videCont">
+		            <video autoplay id="v1" loop controls>
+                  <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                  <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                </video>
+         </div>
+        </div>
+            <script type="text/javascript">
+            $(function () {
+               $('#vidBox').VideoPopUp({
+                	backgroundColor: "#17212a",
+                	opener: "video1",
+                    maxweight: "340",
+                    idvideo: "v1"
+                });
+            });
+            </script>
+          </p>
           </div>
 
           <div class="mastfoot">
