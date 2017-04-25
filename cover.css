@@ -196,6 +196,6 @@ body {
 .playstore-cta {
     background-image: url("../images/playstore.png");
     height: 40px;
-    margin-left: 12px;
+    margin-left: 0px;
     width: 115px;
 }
