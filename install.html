@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="/images/size.png">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <title>Fluent - Real-time translation of your voice</title>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="cover.css" rel="stylesheet">
+	
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/videopopup.js"></script>
+    <link href="css/videopopup.css" rel="stylesheet" media="screen" />
+
+<style>
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+}
+</style>
+
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="inner cover" style="position:relative;top:-80px;">
+            <h1 class="cover-heading"><img src="/images/size.png" height="100px" style="margin-bottom:-100px;position:relative;left:20px;"><br>fluent</h1>	  
+            <p class="lead" style="font-family:courier;font-size:20px;">Real-time translation of your voice</p>
+            <p class="lead">
+              <a href="javascript:void(0)" id="video1" class="btn btn-lg btn-default" style="width:150px">Watch Demo</a></p>
+              <br/>
+              <div id="vidBox">
+              <div id="videCont">
+		            <video id="v1" controls>
+                  <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                  <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                </video>
+         </div>
+        </div>
+            <script type="text/javascript">
+            $(function () {
+               $('#vidBox').VideoPopUp({
+                	backgroundColor: "#17212a",
+                	opener: "video1",
+                    maxweight: "340",
+                    idvideo: "v1"
+                });
+            });
+            </script>          
+          </div>
+
+          <div class="mastfoot" style="position:relative;top:-50px;">
+            <div class="inner" style="position:relative;bottom:50px;">
+              <div>
+    <a href="" class="applink-cta appstore-cta" title="Download on the App Store">Download on the App Store</a>
+    <a href="" class="applink-cta playstore-cta" title="Get it on Google Play">Get it on Google Play</a>
+              </div>
+              <p>Developed by <a href="mailto:fluentrtc@gmail.com?Subject=Fluent%20Interest" target="_top">FluentRTC</a>.<br><br>
+		    <!--<a href="#"><img src="/images/about_home-240.png" height="38px"></a>--><a href="https://twitter.com/fluentrtc" target="_blank"><img src="/images/twitter_home-240.png" height="38px"></a> &nbsp;<a href="https://www.facebook.com/fluentrtc/" target="_blank"><img src="/images/facebook_home-240.png" height="38px"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="dist/js/bootstrap.min.js"></script>
+	  
+  </body>
+</html>
